@@ -8,6 +8,12 @@
 $ docker pull nnsnodnb/shodo:latest
 ```
 
+Or, pull from GitHub Container Registry
+
+```bash
+$ docker pull ghcr.io/nnsnodnb/shodo:latest
+```
+
 ## Usage
 
 [Shodo](https://shodo.ink) account is required to use the `shodo` command.
