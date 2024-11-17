@@ -26,7 +26,7 @@ $ docker pull ghcr.io/nnsnodnb/shodo:latest
 ```bash
 $ docker run -it \
   -v ~/.config/shodo/credentials:/shodo/credentials \
-  shodo:latest lint
+  nnsnodnb/shodo:latest lint
 ```
 
 ### Lint Japanese
@@ -39,7 +39,7 @@ To finish input and request proofreading, press `Ctrl + Z` on Windows or `Ctrl +
 $ docker run -it \
   -e SHODO_API_ROOT=my-shodo-api-root \
   -e SHODO_API_TOKEN=my-shodo-api-token \
-  shodo:latest lint
+  nnsnodnb/shodo:latest lint
 飛行機の欠便があり、運行状況が変わった。 # Your input text
 Linting...
 39:11 もしかして：変換ミス
@@ -55,7 +55,7 @@ $ docker run -t \
   -e SHODO_API_ROOT=my-shodo-api-root \
   -e SHODO_API_TOKEN=my-shodo-api-token \
   -v $(pwd)/README.md:/shodo/README.md \
-  shodo:latest lint /shodo/README.md
+  nnsnodnb/shodo:latest lint /shodo/README.md
 Linting...
 39:11 もしかして：変換ミス
      飛行機の欠便があり、運行（→ 運航）状況が変わった。
@@ -71,7 +71,7 @@ $ docker run \
   -e SHODO_API_ROOT=my-shodo-api-root \
   -e SHODO_API_TOKEN=my-shodo-api-token \
   -v $(pwd):/shodo/docs \
-  shodo:latest download
+  nnsnodnb/shodo:latest download
 ```
 
 ## License
