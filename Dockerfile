@@ -1,4 +1,4 @@
-FROM python:3.13.2-alpine
+FROM python:3.13.3-alpine
 
 ARG SHODO_PYTHON_VERSION=1.1.0
 
