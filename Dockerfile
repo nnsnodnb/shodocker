@@ -1,5 +1,5 @@
 # Build stage
-FROM python:3.13.5 AS builder
+FROM python:3.14.8 AS builder
 
 ARG SHODO_PYTHON_VERSION=1.1.0
 
