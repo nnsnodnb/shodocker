@@ -40,10 +40,10 @@ $ docker run -it \
   -e SHODO_API_ROOT=my-shodo-api-root \
   -e SHODO_API_TOKEN=my-shodo-api-token \
   nnsnodnb/shodo:latest lint
-飛行機の欠便があり、運行状況が変わった。 # Your input text
+豪州の首都シドニーを訪れた
 Linting...
-39:11 もしかして：変換ミス
-     飛行機の欠便があり、運行（→ 運航）状況が変わった。
+1:6 もしかして
+     シドニー（→ キャンベラ）を訪れた
 ```
 
 2. Input file
@@ -57,8 +57,8 @@ $ docker run -t \
   -v $(pwd)/README.md:/shodo/README.md \
   nnsnodnb/shodo:latest lint /shodo/README.md
 Linting...
-39:11 もしかして：変換ミス
-     飛行機の欠便があり、運行（→ 運航）状況が変わった。
+1:6 もしかして
+     シドニー（→ キャンベラ）を訪れた
 ```
 
 ### Download files
