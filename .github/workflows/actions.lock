@@ -5,7 +5,7 @@ version: 'v0.0.2'
 workflows:
     '.github/workflows/lint.yml':
         - 'actions/checkout@v7.0.1'
-        - 'reviewdog/action-actionlint@v1.79.1'
+        - 'reviewdog/action-actionlint@v1.80.0'
         - 'reviewdog/action-hadolint@v1.55.0'
     '.github/workflows/release.yml':
         - 'actions/checkout@v7.0.1'
@@ -39,9 +39,9 @@ dependencies:
         commit: 'sha1-99012661954931238ded8c8b007157a8430204e1'
         owner_id: 5429470
         repo_id: 288487894
-    'reviewdog/action-actionlint@v1.79.1':
-        ref: 'v1.79.1'
-        commit: 'sha1-1758727be30241166609dad4c97588b6ad411f32'
+    'reviewdog/action-actionlint@v1.80.0':
+        ref: 'v1.80.0'
+        commit: 'sha1-a8ac3eea598697a830f7d8e701fc9fcbfde88974'
         owner_id: 48765237
         repo_id: 385059686
     'reviewdog/action-hadolint@v1.55.0':
