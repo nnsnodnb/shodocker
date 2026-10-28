@@ -54,3 +54,12 @@ jobs:
         image: local://nnsnodnb/shodo:pr
         only-fixed: true
         exit-code: true
+        format: markdown
+        output: scout-${{ matrix.runner }}.md
+
+    - name: Comment to PR
+      if: always() && hashFiles(format('scout-{0}.md', matrix.runner)) != ''
+      uses: marocchino/sticky-pull-request-comment@v3.0.5
+      with:
+        header: scout-${{ matrix.platform }}
+        path: scout-${{ matrix.runner }}.md
