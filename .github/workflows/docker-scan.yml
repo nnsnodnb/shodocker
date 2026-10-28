@@ -54,8 +54,10 @@ jobs:
         image: local://nnsnodnb/shodo:pr
         only-fixed: true
         exit-code: true
+        ignore-unfixed: true
         format: markdown
         output: scout-${{ matrix.runner }}.md
+        write-comment: false
 
     - name: Comment to PR
       if: always() && hashFiles(format('scout-{0}.md', matrix.runner)) != ''
