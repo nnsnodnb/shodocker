@@ -55,4 +55,5 @@ jobs:
       with:
         command: cves
         image: local://nnsnodnb/shodo:pr
+        only-fixed: true
         exit-code: true
