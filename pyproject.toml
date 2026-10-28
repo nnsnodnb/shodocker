@@ -1,0 +1,16 @@
+[project]
+name = "shodocker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "nnsnodnb", email = "9856514+nnsnodnb@users.noreply.github.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "shodo==1.0.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
