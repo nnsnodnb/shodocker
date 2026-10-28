@@ -54,7 +54,7 @@ jobs:
         image: local://nnsnodnb/shodo:pr
         only-fixed: true
         exit-code: true
-        ignore-unfixed: true
+        only-fixed: true
         format: markdown
         output: scout-${{ matrix.runner }}.md
         write-comment: false
