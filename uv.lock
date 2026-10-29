@@ -103,15 +103,15 @@ wheels = [
 
 [[package]]
 name = "shodo"
-version = "1.0.0"
+version = "1.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fe/8c/293b89180b0a70fda0dd5e20ed2959010df94a7af1b9cee7bb9fa984affc/shodo-1.0.0.tar.gz", hash = "sha256:ca524e43f22d7cb02e77aa8b82321ce76bee4f01b89b60f6ae3e36327c1a85f2", size = 9311, upload-time = "2024-11-12T02:08:16.985Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/49/9b/8e204c8cc4a67c8d407d61c8d498b1e742864fd074aa02df987d2248fb7a/shodo-1.1.0.tar.gz", hash = "sha256:4533cb170080702b4d1e6cb59878af51345ef839c42fefe7ffeb903a4888dcdf", size = 11095, upload-time = "2024-11-15T06:17:08.086Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/54/66/60d8af3558962b70d282962e9f1838efca2f3254af18dd767d891506113f/shodo-1.0.0-py3-none-any.whl", hash = "sha256:cca81abaf5df7e978ea6f8bf9dd160be079dbe728cb8dcf4e3959dfe422f76b8", size = 10367, upload-time = "2024-11-12T02:08:15.635Z" },
+    { url = "https://files.pythonhosted.org/packages/e1/7a/553c463d92377ae5a4cec1c64faa5c8321be79f3a3899c3f914c807b2381/shodo-1.1.0-py3-none-any.whl", hash = "sha256:ca48919fa4a4e22b4b77bf82e878c6d7512c68be02df0950099e0773cf4d2213", size = 12951, upload-time = "2024-11-15T06:17:05.329Z" },
 ]
 
 [[package]]
@@ -123,7 +123,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "shodo", specifier = "==1.0.0" }]
+requires-dist = [{ name = "shodo", specifier = "==1.1.0" }]
 
 [[package]]
 name = "urllib3"
