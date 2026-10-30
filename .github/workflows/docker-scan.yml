@@ -42,7 +42,7 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
     - name: Scout CVE scan
-      uses: docker/scout-action@v1.28.0
+      uses: docker/scout-action@v1.29.0
       with:
         command: cves
         image: local://nnsnodnb/shodo:pr
