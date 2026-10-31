@@ -11,7 +11,7 @@ workflows:
         - 'docker/setup-buildx-action@v4.4.1'
     '.github/workflows/lint.yml':
         - 'actions/checkout@v7.0.1'
-        - 'reviewdog/action-actionlint@v1.80.8'
+        - 'reviewdog/action-actionlint@v1.81.1'
         - 'reviewdog/action-hadolint@v1.55.0'
     '.github/workflows/release.yml':
         - 'actions/checkout@v7.0.1'
@@ -50,9 +50,9 @@ dependencies:
         commit: 'sha1-99012661954931238ded8c8b007157a8430204e1'
         owner_id: 5429470
         repo_id: 288487894
-    'reviewdog/action-actionlint@v1.80.8':
-        ref: 'v1.80.8'
-        commit: 'sha1-cfa6a621f27735ccc88d35af9d0608692fd9b9f7'
+    'reviewdog/action-actionlint@v1.81.1':
+        ref: 'v1.81.1'
+        commit: 'sha1-619a81ec64ff8c0211cd6146eb2b21e8f1d7f440'
         owner_id: 48765237
         repo_id: 385059686
     'reviewdog/action-hadolint@v1.55.0':
