@@ -50,7 +50,9 @@ jobs:
         exit-code: true
 
     - name: Save Docker image
-      run: docker save shodo:pr | gzip > shodo-oci-image.tar.gz
+      run: |
+        set -o pipefail
+        docker save nnsnodnb/shodo:pr | gzip > shodo-oci-image.tar.gz
 
     - name: Upload shodo-oci-image.tar.gz
       uses: actions/upload-artifact@v7.0.2
