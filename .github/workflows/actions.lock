@@ -7,7 +7,7 @@ workflows:
         - 'actions/checkout@v7.0.1'
         - 'docker/build-push-action@v7.4.0'
         - 'docker/login-action@v4.7.0'
-        - 'docker/scout-action@v1.28.0'
+        - 'docker/scout-action@v1.29.0'
         - 'docker/setup-buildx-action@v4.4.1'
     '.github/workflows/lint.yml':
         - 'actions/checkout@v7.0.1'
@@ -35,9 +35,9 @@ dependencies:
         commit: 'sha1-81c6f93d4bc991e510b342a00b419b3bb4efc5c6'
         owner_id: 5429470
         repo_id: 287743349
-    'docker/scout-action@v1.28.0':
-        ref: 'v1.28.0'
-        commit: 'sha1-4bbf17a9da65a7b5497361bb407e88cc9548f69c'
+    'docker/scout-action@v1.29.0':
+        ref: 'v1.29.0'
+        commit: 'sha1-e7e2a72bf1485d10a58f30696b6c513b261ce4fa'
         owner_id: 5429470
         repo_id: 607129616
     'docker/setup-buildx-action@v4.4.1':
