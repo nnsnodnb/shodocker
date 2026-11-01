@@ -48,3 +48,15 @@ jobs:
         image: local://nnsnodnb/shodo:pr
         only-fixed: true
         exit-code: true
+
+    - name: Save Docker image
+      run: |
+        set -o pipefail
+        docker save nnsnodnb/shodo:pr | gzip > shodo-oci-image.tar.gz
+
+    - name: Upload shodo-oci-image.tar.gz
+      uses: actions/upload-artifact@v7.0.2
+      with:
+        name: oci-image
+        path: shodo-oci-image.tar.gz
+        retention-days: 7
