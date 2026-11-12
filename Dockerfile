@@ -1,7 +1,7 @@
 # Build stage
 FROM debian:trixie-slim AS builder
 
-COPY --from=ghcr.io/astral-sh/uv:0.13.7 /uv /usr/local/bin/uv
+COPY --from=ghcr.io/astral-sh/uv:0.13.8 /uv /usr/local/bin/uv
 
 ENV UV_PYTHON_INSTALL_DIR=/opt/python \
     UV_PYTHON_PREFERENCE=only-managed \
